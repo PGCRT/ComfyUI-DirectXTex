@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+DirectXTex-main/
+
+# Python cache
+__pycache__/
+py/__pycache__/
+*.pyc
+
+# Native build outputs
+*.obj
+*.pdb
+*.lib
+*.exp
+*.iobj
+*.ipdb
+
+# Optional local binary (source-first repo)
+dds_pybind.pyd
+
+# Local archives
+*.zip

@@ -1,0 +1,4 @@
+setuptools>=68
+wheel>=0.41
+pybind11>=2.11
+numpy>=1.24
