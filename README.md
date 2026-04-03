@@ -19,15 +19,9 @@ Everything else is handled by `build.bat` (DirectXTex download + Python deps + b
 git clone https://github.com/PGCRT/ComfyUI-DirectXTex ComfyUI-DirectXTex
 ```
 
-2. Open a terminal in `ComfyUI/custom_nodes/ComfyUI-DirectXTex`
-3. Run:
-
-```bat
-build.bat
-```
-
-4. Wait for success message (`dds_pybind.pyd` copied in folder root)
-5. Restart ComfyUI
+2. Run `build.bat` (double-click it)
+3. Wait for success message (`dds_pybind.pyd` copied in folder root)
+4. Restart ComfyUI
 
 ## Included nodes
 
