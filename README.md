@@ -1,4 +1,4 @@
-# CRT-DirectXTex
+# ComfyUI-DirectXTex
 
 DDS Load/Save nodes for ComfyUI.
 
@@ -16,10 +16,10 @@ Everything else is handled by `build.bat` (DirectXTex download + Python deps + b
 1. Clone into `ComfyUI/custom_nodes`:
 
 ```bat
-git clone https://github.com/PGCRT/ComfyUI-DirectXTex CRT-DirectXTex
+git clone https://github.com/PGCRT/ComfyUI-DirectXTex ComfyUI-DirectXTex
 ```
 
-2. Open a terminal in `ComfyUI/custom_nodes/CRT-DirectXTex`
+2. Open a terminal in `ComfyUI/custom_nodes/ComfyUI-DirectXTex`
 3. Run:
 
 ```bat
