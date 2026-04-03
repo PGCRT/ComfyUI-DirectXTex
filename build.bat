@@ -50,12 +50,24 @@ cmake --build . --config Release --parallel
 if errorlevel 1 goto :fail_build
 
 echo.
-if exist "Release\dds_pybind.pyd" (
-  copy /y "Release\dds_pybind.pyd" "..\dds_pybind.pyd" >nul
-  echo Copied dds_pybind.pyd to project root.
-) else (
-  echo [WARN] Release\dds_pybind.pyd not found. Copy manually from build output.
+set "PYD_CANDIDATE="
+for %%F in ("Release\dds_pybind*.pyd") do (
+  set "PYD_CANDIDATE=%%~fF"
+  goto :copy_pyd
 )
+
+echo [WARN] No built dds_pybind*.pyd found in build\Release.
+goto :after_copy
+
+:copy_pyd
+copy /y "%PYD_CANDIDATE%" "..\dds_pybind.pyd" >nul
+if errorlevel 1 (
+  echo [WARN] Found built module but failed to copy: "%PYD_CANDIDATE%"
+) else (
+  echo Copied "%PYD_CANDIDATE%" to "..\dds_pybind.pyd"
+)
+
+:after_copy
 
 echo.
 echo ================================================
