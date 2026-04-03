@@ -13,8 +13,13 @@ Everything else is handled by `build.bat` (DirectXTex download + Python deps + b
 
 ## Install
 
-1. Put this folder in `ComfyUI/custom_nodes/CRT-DirectXTex`
-2. Open a terminal in this folder
+1. Clone into `ComfyUI/custom_nodes`:
+
+```bat
+git clone https://github.com/PGCRT/ComfyUI-DirectXTex CRT-DirectXTex
+```
+
+2. Open a terminal in `ComfyUI/custom_nodes/CRT-DirectXTex`
 3. Run:
 
 ```bat
